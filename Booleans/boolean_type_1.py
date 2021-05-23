@@ -19,3 +19,4 @@ codes = [264, 118, 534, 705, 1152, 674]
 N = 3
 m = [c % N ==0 for c in codes]
 print(m)
+# test.
