@@ -22,3 +22,13 @@ a is a[:] # --> False
 string = 'hello'
 string == string[:] # --> True
 string is string[:] # --> True
+
+# Strides in Lists:
+b = ['spam', 'egg', 'bacon', 'tomato', 'ham', 'lobster']
+
+# positive stride
+print(b[0:6:2])
+# Negative stride
+print(b[6:0:-2])
+# reverse the list elememts.
+print(b[::-1])
