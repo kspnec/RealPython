@@ -1,0 +1,8 @@
+>>> "Using double quotes"
+'Using double quotes'
+>>> 'Using single quotes'
+'Using single quotes'
+>>> """Using triple
+... quotes for multiple
+... lines"""
+'Using triple\nquotes for multiple\nlines'

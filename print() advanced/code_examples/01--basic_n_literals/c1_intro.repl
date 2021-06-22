@@ -1,0 +1,6 @@
+>>> print()
+
+>>> print("Hello world!")
+Hello world!
+>>> print("What is the answer?", 42)
+What is the answer? 42

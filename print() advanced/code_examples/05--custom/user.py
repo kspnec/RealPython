@@ -1,0 +1,10 @@
+class User:
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+
+    def __str__(self):
+        return self.username
+
+    def __repr__(self):
+        return f"User(username='{self.username}', password='{self.password}')"
