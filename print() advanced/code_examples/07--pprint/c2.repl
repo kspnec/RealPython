@@ -1,0 +1,27 @@
+>>> cities = {
+...     'USA': {'Texas': {'Dallas':['Irving']}},
+...     'CANADA': {'BC': {'Vancouver':['North Van']}},
+... }
+>>> pprint(cities)
+{'CANADA': {'BC': {'Vancouver': ['North Van']}},
+ 'USA': {'Texas': {'Dallas': ['Irving']}}}
+>>> pprint(cities, depth=3)
+{'CANADA': {'BC': {'Vancouver': [...]}}, 'USA': {'Texas': {'Dallas': [...]}}}
+>>> items = [1, 2, 3]
+>>> items.append(items)
+>>> print(items)
+[1, 2, 3, [...]]
+>>> pprint(items)
+[1, 2, 3, <Recursion on list with id=4547300424>]
+>>> id(items)
+4547300424
+>>> pprint('One', 'Two')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/pprint.py", line 53, in pprint
+    printer.pprint(object)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/pprint.py", line 139, in pprint
+    self._format(object, self._stream, 0, 0, {}, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/pprint.py", line 176, in _format
+    stream.write(rep)
+AttributeError: 'str' object has no attribute 'write'

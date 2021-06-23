@@ -1,0 +1,16 @@
+>>> print("First line \nSecond line \n\tThird line with tab")
+First line 
+Second line 
+        Third line with tab
+>>> print("Bong \a")
+Bong 
+>>> print("Octal 275 is a half: \275")
+Octal 275 is a half: ½
+>>> print("Hex 0xBD ix Octal 275: \xBD")
+Hex 0xBD ix Octal 275: ½
+>>> print("Embedding quotes in quotes \" or \' ")
+Embedding quotes in quotes " or ' 
+>>> print("What if you want a backslash? \\ ")
+What if you want a backslash? \ 
+>>> print("Carriage return means go back \r to the start of the line")
+ to the start of the lineback 

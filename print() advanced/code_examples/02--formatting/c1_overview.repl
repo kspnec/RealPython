@@ -1,0 +1,5 @@
+'Hello %s' % name    # C-style
+
+'My name is {1}, {0} {1}'.format('James', 'Bond')  # added in Python 3.0
+
+f'I am {age} years old'  # f-string added in Python 3.6

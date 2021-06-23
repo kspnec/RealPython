@@ -1,0 +1,5 @@
+>>> import sys
+>>> result = sys.stdout.write('hello\n')
+hello
+>>> result
+6

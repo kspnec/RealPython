@@ -1,0 +1,32 @@
+>>> print('There are', 6, 'members of Monty Python')
+There are 6 members of Monty Python
+>>> message = 'There are' + 6 + 'members of Monty Python'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> message = 'There are' + str(6) + 'members of Monty Python'
+>>> print(message)
+There are6members of Monty Python
+>>> print('There are', 6, 'members of Monty Python', sep='😀')
+There are😀6😀members of Monty Python
+>>> print('There are', 6, 'members of Monty Python', sep=' ')
+There are 6 members of Monty Python
+>>> print('There are', 6, 'members of Monty Python', sep=None)
+There are 6 members of Monty Python
+>>> print('There are', 6, 'members of Monty Python', sep='')
+There are6members of Monty Python
+>>> print('There are', 6, 'members of Monty Python', sep='\n')
+There are
+6
+members of Monty Python
+>>> data = [ 
+...     ['year', 'last', 'first'], 
+...     [1943, 'Idle', 'Eric'], 
+...     [1939, 'Cleese', 'John'] 
+... ]
+>>> for row in data:
+...     print(*row, sep=',')
+... 
+year,last,first
+1943,Idle,Eric
+1939,Cleese,John
